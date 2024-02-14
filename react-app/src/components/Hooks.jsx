@@ -15,5 +15,4 @@ const Hooks = () => {
     </div>
   )
 }
-
 export default Hooks
