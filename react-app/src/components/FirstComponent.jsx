@@ -3,6 +3,8 @@ import EventHandling from "./EventHandling";
 import SecondComponent from "./SecondComponent";
 import ListRendering from "./ListRendering";
 import IfElse from "./IfElse"
+import Fragment from "./Fragment";
+import Hooks from "./Hooks";
 
 
 function Firstcomponent() {
@@ -19,7 +21,9 @@ function Firstcomponent() {
             {/* <EventHandling LogData={LogData} WithoutPara={WithoutPara}></EventHandling> */}
             {/* <SecondComponent></SecondComponent> */}
             {/* <IfElse></IfElse> */}
-            <ListRendering></ListRendering>
+            {/* <ListRendering></ListRendering> */}
+            {/* <Fragment></Fragment> */}
+            <Hooks></Hooks>
             
         </div>
     )

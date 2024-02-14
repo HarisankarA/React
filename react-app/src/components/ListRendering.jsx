@@ -1,5 +1,6 @@
 import React from 'react'
-import SecondComponent from './SecondComponent'
+import ListRendering2 from './ListRendering2'
+
 
 const ListRendering = () => {
 
@@ -30,7 +31,7 @@ const ListRendering = () => {
 
 //Save return type in single component and taking from there using properties
 
-    let result = students_data.map((student, index ) => <SecondComponent key={index} date= {student}></SecondComponent>)
+    let result = students_data.map((student, index ) => <ListRendering2 key={index} date= {student}></ListRendering2>)
 
     //Normal Way
     // {
