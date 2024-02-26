@@ -5,6 +5,8 @@ import ListRendering from "./ListRendering";
 import IfElse from "./IfElse"
 import Fragment from "./Fragment";
 import Hooks from "./Hooks";
+import Task1 from "./Task1";
+import Objectmethod from "./Objectmethod"
 
 
 function Firstcomponent() {
@@ -12,7 +14,6 @@ function Firstcomponent() {
     const LogData = (name) => console.log(name);
 
     const WithoutPara = () => console.log("Harisankar");
-
 
     return ( 
         <div>
@@ -23,7 +24,9 @@ function Firstcomponent() {
             {/* <IfElse></IfElse> */}
             {/* <ListRendering></ListRendering> */}
             {/* <Fragment></Fragment> */}
-            <Hooks></Hooks>
+            {/* <Hooks></Hooks> */}
+            {/* <Task1></Task1> */}
+            <Objectmethod></Objectmethod>
             
         </div>
     )
