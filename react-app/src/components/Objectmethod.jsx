@@ -17,6 +17,7 @@ const Objectmethod = () => {
         setStudentName ("")
         setStudentAge ("")
     }
+    
     let result = <div> 
         <p>Student Name: {studentData.name}</p>
         <p>Student Age: {studentData.age}</p>

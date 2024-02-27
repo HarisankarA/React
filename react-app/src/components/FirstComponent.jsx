@@ -7,6 +7,7 @@ import Fragment from "./Fragment";
 import Hooks from "./Hooks";
 import Task1 from "./Task1";
 import Objectmethod from "./Objectmethod"
+import AxiosAPIs from "./AxiosAPIs";
 
 
 function Firstcomponent() {
@@ -26,7 +27,8 @@ function Firstcomponent() {
             {/* <Fragment></Fragment> */}
             {/* <Hooks></Hooks> */}
             {/* <Task1></Task1> */}
-            <Objectmethod></Objectmethod>
+            {/* <Objectmethod></Objectmethod> */}
+            <AxiosAPIs></AxiosAPIs>
             
         </div>
     )
