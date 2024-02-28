@@ -4,7 +4,7 @@ import axios from 'axios'
 const AxiosAPIs = () => {
 
     useEffect (() => {
-
+//                                          Get Method
         axios.get('http://127.0.0.1:8000/customer/')
         .then(response => console.log(response.data))
         .catch(error => console.error())
