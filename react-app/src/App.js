@@ -1,8 +1,8 @@
 import './App.css';
-import EventHandling from './components/EventHandling';
+// import EventHandling from './components/EventHandling';
 import Firstcomponent from './components/FirstComponent';
-import SecondComponent  from './components/SecondComponent';
-import ListRendering from './components/ListRendering';
+// import SecondComponent  from './components/SecondComponent';
+// import ListRendering from './components/ListRendering';
 
 function App() {
   return (

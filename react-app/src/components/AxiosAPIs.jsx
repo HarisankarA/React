@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const AxiosAPIs = () => {
@@ -6,14 +6,14 @@ const AxiosAPIs = () => {
     useEffect (() => {
 //                                          Get Method
         axios.get('http://127.0.0.1:8000/customer/')
-        .then(response => console.log(response.data))
-        .catch(error => console.error())
+        .then(response => {})
+        .catch(error => {})
         
     },[])
 
-  return (
+    return (
     <div>
-        
+      
     </div>
   )
 }

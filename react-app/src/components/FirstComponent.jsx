@@ -1,21 +1,22 @@
 import React from "react";
-import EventHandling from "./EventHandling";
-import SecondComponent from "./SecondComponent";
-import ListRendering from "./ListRendering";
-import IfElse from "./IfElse"
-import Fragment from "./Fragment";
-import Hooks from "./Hooks";
-import Task1 from "./Task1";
-import Objectmethod from "./Objectmethod"
-import AxiosAPIs from "./AxiosAPIs";
+// import EventHandling from "./EventHandling";
+// import SecondComponent from "./SecondComponent";
+// import ListRendering from "./ListRendering";
+// import IfElse from "./IfElse"
+// import Fragment from "./Fragment";
+// import Hooks from "./Hooks";
+// import Task1 from "./Task1";
+// import Objectmethod from "./Objectmethod"
+// import AxiosAPIs from "./AxiosAPIs";
 import PostAxios from "./PostAxios";
+import GetAxios from "./GetAxios"
 
 
 function Firstcomponent() {
 
-    const LogData = (name) => console.log(name);
+    // const LogData = (name) => console.log(name);
 
-    const WithoutPara = () => console.log("Harisankar");
+    // const WithoutPara = () => console.log("Harisankar");
 
     return ( 
         <div>
@@ -29,8 +30,9 @@ function Firstcomponent() {
             {/* <Hooks></Hooks> */}
             {/* <Task1></Task1> */}
             {/* <Objectmethod></Objectmethod> */}
-            <AxiosAPIs></AxiosAPIs>
+            {/* <AxiosAPIs></AxiosAPIs> */}
             <PostAxios></PostAxios>
+            <GetAxios></GetAxios>
             
         </div>
     )
