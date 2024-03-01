@@ -9,7 +9,7 @@ const GetAxios = () => {
     useEffect (() => {
 
         axios.get('http://127.0.0.1:8000/customer/')
-        .then(response => setData(response.data))
+          .then(response => setData(response.data))
         .catch(error => {})
         
     },[])
@@ -32,11 +32,10 @@ const GetAxios = () => {
               <th>Edit</th>
             </tr>
           </thead>
-          <tbody>
-            {result}
-          </tbody>
-
-        </table>
+        <tbody>
+           {result}
+        </tbody>
+      </table>
     </div>
   )
 }
