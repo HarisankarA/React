@@ -1,30 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import CustomerRendering from './CustomerRendering'
 
-const AxiosAPIs = () => {
+const GetAxios = () => {
 
     const [data, setData] = useState([])
 
     useEffect (() => {
-//                                          Get Method
+
         axios.get('http://127.0.0.1:8000/customer/')
         .then(response => setData(response.data))
         .catch(error => {})
         
     },[])
 
-    let result = data.map((customer_Data, index)=> {
-      return(
-        <tr key={index}>
-          <td>{customer_Data.customer_name}</td>
-          <td>{customer_Data.company_name}</td>
-          <td>{customer_Data.age}</td>
-          <td>{customer_Data.phone_number}</td>
-          <td>{customer_Data.member_since}</td>
-          <td>{customer_Data.address}</td>
-        </tr>
-      )
-    })
+    let result = data.length > 0 ? data.map(customer => <CustomerRendering key= {customer.id} customer_Data= {customer}/>): <div>No Data Found</div>
 
 
   return (
@@ -39,6 +29,7 @@ const AxiosAPIs = () => {
               <th>Phone Number</th>
               <th>Member Since</th>
               <th>Address</th>
+              <th>Edit</th>
             </tr>
           </thead>
           <tbody>
@@ -50,4 +41,4 @@ const AxiosAPIs = () => {
   )
 }
 
-export default AxiosAPIs
+export default GetAxios

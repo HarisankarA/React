@@ -8,8 +8,8 @@ import React from "react";
 // import Task1 from "./Task1";
 // import Objectmethod from "./Objectmethod"
 // import AxiosAPIs from "./AxiosAPIs";
-import PostAxios from "./PostAxios";
-import GetAxios from "./GetAxios"
+
+
 
 
 function Firstcomponent() {
@@ -31,8 +31,8 @@ function Firstcomponent() {
             {/* <Task1></Task1> */}
             {/* <Objectmethod></Objectmethod> */}
             {/* <AxiosAPIs></AxiosAPIs> */}
-            <PostAxios></PostAxios>
-            <GetAxios></GetAxios>
+           
+            
             
         </div>
     )

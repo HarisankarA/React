@@ -1,16 +1,19 @@
 import './App.css';
-// import EventHandling from './components/EventHandling';
-import Firstcomponent from './components/FirstComponent';
-// import SecondComponent  from './components/SecondComponent';
-// import ListRendering from './components/ListRendering';
+import { Routes, Route } from 'react-router-dom';
+import GetAxios from './components/HttpMethods/GetAxios';
+import PostAxios from './components/HttpMethods/PostAxios';
+
+
 
 function App() {
   return (
     <div>
-      <h1>Hi Harish you are learning React Here</h1>
+      <h1>Hi Harish, Welcome To React Workspace</h1>
 
-      <Firstcomponent></Firstcomponent>
-      {/* <ListRendering></ListRendering> */}
+      <Routes>
+        <Route path='/all/customer/' element={<GetAxios/>} />
+        <Route path='/post/customer/' element={<PostAxios/>} />
+      </Routes>
             
     </div>
   );
