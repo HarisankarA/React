@@ -5,7 +5,7 @@ const CustomerRendering = ({customer_Data}) => {
     return(
         <tr>
           <td>{customer_Data.customer_name}</td>
-          <td>{customer_Data.customer_name}</td>
+          <td>{customer_Data.company_name}</td>
           <td>{customer_Data.age}</td>
           <td>{customer_Data.phone_number}</td>
           <td>{customer_Data.member_since}</td>

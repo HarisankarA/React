@@ -10,3 +10,5 @@ const ListRendering2 = (data) => {
 }
 
 export default ListRendering2
+
+

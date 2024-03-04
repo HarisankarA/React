@@ -1,21 +1,8 @@
 import React from 'react'
 
-
-const Task1 = () => {
-
-            // const [student_name = setStudentName] = useState([])
-
-            
-
+function Task1() {
   return (
-    <div>
-            {/* <form>
-                <label htmlFor="student_name">Enter Studet Name</label>
-                
-                <input type="text" value={student_name}  />
-
-            </form> */}
-    </div>
+    <div>Task1</div>
   )
 }
 

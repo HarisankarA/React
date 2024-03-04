@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, {useState } from 'react'
+import {useNavigate } from 'react-router-dom'
 
 const PostAxios = () => {
-
+    const navigate = useNavigate ()
     const [customerName, setCustomerName] = useState("")
     const [companyName, setCompanyName] = useState("")
     const [age, setAge] = useState("")
@@ -24,13 +25,14 @@ const PostAxios = () => {
     }
 
     axios.post('http://127.0.0.1:8000/customer/', customer_Data)
-    .then(response => {})
+    .then(response => navigate ('/all/customer/') )
     .catch(error => {})
     }
 
 
   return (
     <div>
+      <button onClick={() => navigate('/all/customer/')}>Back</button>
         <form>
 
             <label htmlFor="">Customer Name:</label> <br />
@@ -52,10 +54,8 @@ const PostAxios = () => {
             <input type="text" value = {address} onChange={event => setAddress(event.target.value)} /> <br /><br />
 
             <input type="submit" onClick={event =>postData(event)}/>
-
         </form>
     </div>
   )
 }
-
 export default PostAxios
