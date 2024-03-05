@@ -1,7 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const CustomerRendering = ({customer_Data}) => {
-
+  const navigate = useNavigate ()
     return(
         <tr>
           <td>{customer_Data.customer_name}</td>
@@ -11,7 +12,7 @@ const CustomerRendering = ({customer_Data}) => {
           <td>{customer_Data.member_since}</td>
           <td>{customer_Data.address}</td>
           <td>
-            <button>Edit</button>
+            <button onClick={() => navigate(`/patch/customer/${customer_Data.id}`)}>Edit</button>
           </td>
         </tr>
     )
