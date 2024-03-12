@@ -29,7 +29,7 @@ const Patch = () => {
   },[])
 
   const postData = (event) => {
-   event.preventDefault()
+    event.preventDefault()
     const customer_Data ={
       customer_name: customerName,
       company_name: companyName,
@@ -38,11 +38,17 @@ const Patch = () => {
       member_since: memberSince,
       address: address
     }
-  
     axios.patch(`http://127.0.0.1:8000/customer/${id}/`, customer_Data)
      .then(response => navigate ('/all/customer/') )
      .catch(error => {})
-    }
+  }
+
+  const delete_data = (event) => {
+    event.preventDefault()
+    axios.delete(`http://127.0.0.1:8000/customer/${id}/`,)
+    .then(response => navigate ('/all/customer/') )
+    .catch(error => {})
+  }
 
   return (
     <div>
@@ -68,7 +74,9 @@ const Patch = () => {
         <label htmlFor="">Address:</label> <br />
         <input type="text" value = {address} onChange={event => setAddress(event.target.value)} /> <br /><br />
           
-        <input type="Submit" onClick={event =>postData(event)} />
+        <input type="submit" value = "Update" onClick={event =>postData(event)} />
+
+        <button onClick={event => delete_data(event)}>Delete</button>
 
       </form>
 
@@ -76,4 +84,4 @@ const Patch = () => {
   )
 }
 
-export default Patch
+export default Patch     

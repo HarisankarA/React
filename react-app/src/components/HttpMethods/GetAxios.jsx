@@ -8,18 +8,16 @@ const GetAxios = () => {
     const [data, setData] = useState([])
 
     useEffect (() => {
-
         axios.get('http://127.0.0.1:8000/customer/')
           .then(response => setData(response.data))
-        .catch(error => {})
+          .catch(error => {})
     },[])
 
     let result = data.length > 0 ? data.map(customer => <CustomerRendering key= {customer.id} customer_Data= {customer}/>): <div>No Data Found</div>
 
-
   return (
     <div>
-      <h2>Customers</h2>
+      <h2>Customers</h2>  
       <button onClick={() => navigate ('/post/customer/')}>Add Customer</button>
         <table>
           <thead>
@@ -37,7 +35,6 @@ const GetAxios = () => {
            {result}
         </tbody>
       </table>
-    
     </div>
   )
 }
