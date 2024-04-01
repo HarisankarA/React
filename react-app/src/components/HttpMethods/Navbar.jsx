@@ -6,6 +6,8 @@ const Navbar = () => {
     <nav>
         <NavLink to = '/'>Home</NavLink> 
         <NavLink to = '/all/customer/'>Customers</NavLink>
+        <NavLink to = '/useconstext/compA/'>UseContext</NavLink>
+        <NavLink to = '/useconstext/contextwithreducer/'>UseContextwithreducer</NavLink>
     </nav>
   )
 }
