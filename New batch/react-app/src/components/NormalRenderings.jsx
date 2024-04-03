@@ -10,6 +10,7 @@ import ShortCircuit from './ifElse/ShortCircuit'
 import UseState from './Hooks/UseState'
 import UseStateFunction from './Hooks/UseStateFunction'
 import Mapmethod from './mapMethod/Mapmethod'
+import Task1 from './Tasks/Task1'
 
 
 
@@ -28,7 +29,8 @@ const NormalRenderings = () => {
             <ShortCircuit></ShortCircuit> */}
             {/* <UseState></UseState> */}
             {/* <UseStateFunction></UseStateFunction> */}
-            <Mapmethod></Mapmethod>
+            {/* <Mapmethod></Mapmethod> */}
+            <Task1></Task1>
             
 
         </div>
