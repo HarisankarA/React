@@ -11,6 +11,8 @@ import UseState from './Hooks/UseState'
 import UseStateFunction from './Hooks/UseStateFunction'
 import Mapmethod from './mapMethod/Mapmethod'
 import Task1 from './Tasks/Task1'
+import PreviousState from './previousState/PreviousState'
+import UseEffect from './Hooks/UseEffect'
 
 
 
@@ -30,8 +32,9 @@ const NormalRenderings = () => {
             {/* <UseState></UseState> */}
             {/* <UseStateFunction></UseStateFunction> */}
             {/* <Mapmethod></Mapmethod> */}
-            <Task1></Task1>
-            
+            {/* <Task1></Task1> */}
+            {/* <PreviousState></PreviousState> */}
+            <UseEffect></UseEffect>
 
         </div>
     )

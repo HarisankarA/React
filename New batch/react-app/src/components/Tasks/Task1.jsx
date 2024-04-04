@@ -2,17 +2,18 @@ import React, { useEffect, useState } from 'react'
 
 const Task1 = () => {
 
-    const [count, setCount] = useState([]) //Array
+    const [count, setCount] = useState([])           //Array
 
-    const [persondetails, setPersondetails] = useState({                         //Object
-        firstname :"",
-        lastname:""
+    const [persondetails, setPersondetails] = useState({     //Object
+        firstname :" ",
+        lastname:" "
     })
 
     const [results, setResults] = useState({
 
         subject:"",
         marks:""
+
     })
     
     const Incrementer = () => {
@@ -54,13 +55,16 @@ const Task1 = () => {
             <button onClick={() => Incrementer()}>Increment</button>  <br />
 
             <button onClick={() => updateFirstname()}>Add First Name</button> <br />
-            <button onClick={() => updatLastname()} >Add Last Name</button><br />
+            <button onClick={() => updatLastname()} >Add Last Name</button> <br />
 
-            <button onClick={updateSubject} >Add subject</button><br />
-            <button onClick={updateMarks} >Add subject</button><br />
+            <button onClick={updateSubject} >Add subject</button> <br />
+            <button onClick={updateMarks} >Add subject</button> <br />
 
         </div>
     )
 }
 
 export default Task1
+
+
+//updating a value to object and and to a array - Task 1
