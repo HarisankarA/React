@@ -12,9 +12,13 @@ const FunctionCreation = () => {
     }
 
     return (
+
     //Without props 
+
         // <div>
+
         //     <button onClick={LogData}>Log Data</button>
+        
         // </div>
 
     //With using props 
