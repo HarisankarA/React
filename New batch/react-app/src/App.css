@@ -4,3 +4,19 @@
     color: white;
 } */
 
+/* li{
+    display: block;
+    column-gap: 20px;
+    row-gap: 10px;
+    list-style-type: none;
+} */
+
+a.active {
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+li{
+    display: inline-flex;
+    row-gap: 30px;
+}

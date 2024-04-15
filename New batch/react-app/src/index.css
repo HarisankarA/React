@@ -13,8 +13,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  ul{
-    display: flex;
+  /* li{
+    display: inline;
     column-gap: 20px;
     list-style-type: none;
   }
@@ -24,4 +24,4 @@
     
     text-decoration: none;
 
-  }
+  } */

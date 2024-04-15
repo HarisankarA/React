@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 
 const CustomerAdd = () => {
 
     const [customername, setCustomerName] = useState('')
     const [industry, setIndustry] = useState('')
+    const navigate = useNavigate ()
 
     const AddNewCustomer = event => {
         event.preventDefault()
@@ -12,10 +15,11 @@ const CustomerAdd = () => {
             customer_name: customername,
             industry: industry
         }
-        console.log(dataset);
+        
+        axios.post('http://127.0.0.1:4000/customers/', dataset)
+        .then(response => navigate('/customer/list/'))
+        .catch(error => {})
     }
-
-    
 
   return (
 

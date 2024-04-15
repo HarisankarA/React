@@ -23,6 +23,7 @@ import FindIndex from './functionBasedMethods/FindIndex'
 import Map from './functionBasedMethods/Map'
 import Foreach from './functionBasedMethods/Foreach'
 import Find from './functionBasedMethods/Find'
+import Reducer from './functionBasedMethods/Reducer'
 
 
 
@@ -57,6 +58,7 @@ const NormalRenderings = () => {
             <Map></Map>
             <Foreach></Foreach>
             <Find></Find>
+            <Reducer></Reducer>
 
 
 
