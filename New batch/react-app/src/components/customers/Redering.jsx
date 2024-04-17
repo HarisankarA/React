@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const Redering = ({sData, index}) => {
+const Redering = ({sData, index, deletefunc}) => {
+
+  const navigate = useNavigate()
 
   return (
 
@@ -10,7 +13,10 @@ const Redering = ({sData, index}) => {
             <td>{sData.customer_name}</td>
             <td>{sData.industry}</td>
             <td>
-              <button>Edit</button>
+              <button onClick={()=> navigate(`/customer/patch/${sData._id}`)}>Edit</button>
+            </td>
+            <td>
+              <button onClick={() => deletefunc(sData._id)} >Delete</button>
             </td>
             
         </tr>

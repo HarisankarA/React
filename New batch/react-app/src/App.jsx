@@ -8,6 +8,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import CustomerAdd from './components/customers/CustomerAdd'
 import CustomerList from './components/customers/CustomerList'
+import CustomerPatch from './components/customers/CustomerPatch'
 
 
 
@@ -28,7 +29,7 @@ const App = () => {
 
                 <Route path='/customer/list/' element={<CustomerList/>} />
                 <Route path='/customer/add/' element={<CustomerAdd/>} />
-                <Route path='/customer/patch/' element={<CostomerPatch/>} />
+                <Route path='/customer/patch/:id/' element={<CustomerPatch/>} />
                 
             </Routes>
             

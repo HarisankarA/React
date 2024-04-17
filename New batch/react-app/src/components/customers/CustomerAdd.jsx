@@ -25,7 +25,7 @@ const CustomerAdd = () => {
 
         <div>
             <form>
-
+                <button onClick={()=> navigate('/customer/list/')}>Back</button><br />
                 <label htmlFor="">Customer Name: </label>
                 <input type="text"  value={customername} onChange={event => setCustomerName(event.target.value)}/>
                 <br />
@@ -35,6 +35,8 @@ const CustomerAdd = () => {
                 <br />
 
                 <input type="submit" onClick={event => AddNewCustomer(event)} />
+
+                
 
             </form>          
         </div>
