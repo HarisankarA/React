@@ -6,14 +6,14 @@ import Redering from './Redering'
 const CustomerList = () => {
 
     const navigate = useNavigate()
-    const params = useParams()
-
     const [data, setData] = useState([])
-    const {id} = params
 
+
+    const params = useParams()
+    const {id} = params    
     const Deletecustomer = (id) => {
         axios.delete(`http://127.0.0.1:4000/customers/${id}/`)
-        .then(response => setData(data.filter(customer=> customer._id !== id)))
+        .then(response => setData(data.filter(customer => customer._id !== id)))
         .catch(error=>{})
     }
 
@@ -39,6 +39,7 @@ const CustomerList = () => {
                     <th>Customer</th>
                     <th>Industry</th>
                     <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
 

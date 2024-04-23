@@ -10,6 +10,10 @@ import CustomerAdd from './components/customers/CustomerAdd'
 import CustomerList from './components/customers/CustomerList'
 import CustomerPatch from './components/customers/CustomerPatch'
 
+import ProductGet from './components/products/ProductGet'
+import ProductAdd from './components/products/ProductAdd'
+import ProductEdit from './components/products/ProductEdit'
+
 
 
 
@@ -30,6 +34,10 @@ const App = () => {
                 <Route path='/customer/list/' element={<CustomerList/>} />
                 <Route path='/customer/add/' element={<CustomerAdd/>} />
                 <Route path='/customer/patch/:id/' element={<CustomerPatch/>} />
+
+                <Route path='/product/list/' element = {<ProductGet/>}/>
+                <Route path='/product/add/' element = {<ProductAdd/>}/>
+                <Route path='/product/edit/:id/' element = {<ProductEdit/>}/>
                 
             </Routes>
             
